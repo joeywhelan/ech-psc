@@ -1,0 +1,4 @@
+project_id = "your GCP project id"
+elastic_cloud_api_key = "your key"
+elastic_central_psc_service_attachment = "projects/cloud-production-168820/regions/us-central1/serviceAttachments/proxy-psc-production-us-central1-v1-attachment"
+elastic_central_psc_dns_name = "psc.us-central1.gcp.cloud.es.io"
