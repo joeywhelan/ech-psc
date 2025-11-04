@@ -1,13 +1,14 @@
 ![cover image](cover.png)
 
 # Elastic/GCP Private Service Connect Integration
-I cover deployment of [Elastic Cloud Hosted (ECH)](https://www.elastic.co/cloud/) and [Google Cloud Platform (GCP)](https://cloud.google.com/?hl=en) [Private Service Connect (PSC)](https://docs.cloud.google.com/vpc/docs/private-service-connect) via [Terraform](https://developer.hashicorp.com/terraform) in this article.  The following areas are covered:
+I cover the deployment of [Elastic Cloud Hosted (ECH)](https://www.elastic.co/cloud/) and [Google Cloud Platform (GCP)](https://cloud.google.com/?hl=en) [Private Service Connect (PSC)](https://docs.cloud.google.com/vpc/docs/private-service-connect) via [Terraform](https://developer.hashicorp.com/terraform) in this article.  The following areas are covered:
 - Deployment of an ECH cluster on GCP via Terraform
 - Creation of a PSC endpoint to that cluster via Terraform
 - Creation of a test VM on GCP via Terraform
 - Deployment and execution of a minimal latency testing Python app against the external and PSC connections to ECH  
 
-PSC enables the connection of existing GCP services to ECH, keeping that traffic on the Google backbone.  Internet egress is avoided.  There are performance and cost benefits from the use of PSC.
+PSC enables the connection of existing GCP services to ECH, keeping that traffic on the Google backbone.  Internet ingress/egress is avoided; therefore, there are performance and cost benefits from the use of PSC.
+
 
 # Architecture
 
